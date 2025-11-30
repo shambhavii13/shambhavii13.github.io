@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shambhavi Shanker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    body {
+        font-family: "Inter", sans-serif;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        line-height: 1.6;
+        color: #222;
+    }
+
+    h1, h2 {
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 15px;
+        font-size: 1rem;
+    }
+
+    .section {
+        margin-top: 40px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .course-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="profile.jpg" alt="Profile Photo">
+    <div>
+        <h1>Shambhavi Shanker</h1>
+        <p>Dual Degree (B.Tech + M.Tech), Electrical Engineering<br>
+        Indian Institute of Technology Bombay</p>
+
+        <div class="contact">
+            <a href="mailto:shambhavi13shanker@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/shambhavi-shanker"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com"><i class="fa-brands fa-google"></i></a>
+            <a href="https://shambhavi-portfolio.com"><i class="fa-solid fa-globe"></i></a>
+            <a><i class="fa-solid fa-phone"></i> +91-9798192829</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bio -->
+<div class="section">
+<h2>About Me</h2>
+<p>
+I am a final-year Dual Degree student in Electrical Engineering at IIT Bombay, pursuing a Minor in Machine Learning
+and Data Science. My work spans federated learning, medical image analysis, multi-modal reasoning, and representation learning.
+I enjoy combining foundational AI techniques with real-world biomedical and geospatial applications.
+</p>
+</div>
+
+<!-- Publications -->
+<div class="section">
+<h2>Publications</h2>
+<ul>
+    <li>S Gupta, <b>S Shanker</b>, A Sethi | <i>FedVR: Variance Regularized Hypernetwork for Federated Domain Generalization</i> | AAAI 2026 FLCA Workshop, Singapore</li>
+    <li>S Gupta, <b>S Shanker</b>, A Sethi | <i>FedNeuro: Multi-Site fMRI Analysis Using Hypernetwork Personalized and Privacy Enhanced Federated Learning</i> | AAAI Bridge Program 2026</li>
+    <li><b>S Shanker</b>, M Padmanaban, et al. | <i>Geospatial CoT Reasoning for Enhanced VQA on Satellite Imagery</i> | NeurIPS 2025 Climate ML Workshop</li>
+    <li>RK Gupta, <b>S Shanker</b>, S Das, A Sekhar, A Sethi | <i>WSI Domain Adaptation via Fisher Vector + SSL + Novel Loss</i> | MIDL 2025</li>
+    <li>RK Gupta, <b>S Shanker</b>, D Dharani, A Sethi | <i>Efficient WSI Classification via Fisher Vectors</i> | IEEE BIBE 2024</li>
+</ul>
+</div>
+
+<!-- Internships & Research -->
+<div class="section">
+<h2>Internships & Research Experience</h2>
+
+<h3>Federated Domain Generalization – MeDAL Lab, IIT Bombay (Aug ’25 – Ongoing)</h3>
+<ul>
+    <li>Developing hypernetwork-based federated learning models improving global performance & per-client robustness.</li>
+    <li>Designed variance-regularized aggregation and structural privacy-aware domain embeddings.</li>
+    <li>Extended to multi-site fMRI analysis enabling collaborative neuroimaging without raw data sharing.</li>
+</ul>
+
+<h3>AI Research Intern – IBM Research (May ’25 – Aug ’25)</h3>
+<ul>
+    <li>Built Geospatial VQA system with Chain-of-Thought reasoning and multispectral fusion; improved accuracy by 36%.</li>
+    <li>Created dataset with CoT annotations; trained using SFT + DPO.</li>
+    <li>Co-developed multi-agentic workflow reasoning across text, tables, and imagery.</li>
+</ul>
+
+<h3>Unsupervised Domain Adaptation – MeDAL Lab, IIT Bombay (May ’23 – May ’25)</h3>
+<ul>
+    <li>Developed WSI domain adaptation pipeline using Fisher Vectors, SSL, MIL, and carefully designed loss functions.</li>
+    <li>Preprocessing included tissue detection, patch ranking, and nuclei counting.</li>
+    <li>Achieved 79% accuracy in HER2 classification across clinical domains.</li>
+</ul>
+
+<h3>Data Science Intern – Amaranth Medical Analytics (May ’24 – Aug ’24)</h3>
+<ul>
+    <li>Annotated WSIs and trained U-Net for multi-class tissue segmentation.</li>
+    <li>Computed biomarker scores (HER2, ER, PR) using cancerous-region filtering.</li>
+    <li>Integrated segmentation layers into clinical pathology portal.</li>
+</ul>
+</div>
+
+<!-- Courses -->
+<div class="section">
+<h2>Relevant Courses</h2>
+
+<div class="course-grid">
+    <div>Computer Vision</div>
+    <div>Advanced Image Processing</div>
+    <div>Advanced Machine Learning</div>
+
+    <div>Linear Algebra</div>
+    <div>Economics</div>
+    <div>Probability & Random Processes</div>
+
+    <div>Quantum Communication</div>
+    <div>Neuromorphic Engineering</div>
+    <div>Data Science Bootcamp (WiDS IITB)</div>
+
+    <div>Signal Processing</div>
+    <div>Simulation & Modeling</div>
+    <div>Control Systems</div>
+
+    <div>Quantum Physics</div>
+    <div>Calculus</div>
+    <div>Algorithmic Design of Digital Systems</div>
+</div>
+
+</div>
+
+</body>
+</html>
