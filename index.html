@@ -2,168 +2,201 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shambhavi Shanker</title>
+<title>Shambhavi Shanker - Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-    body {
-        font-family: "Inter", sans-serif;
-        max-width: 900px;
-        margin: auto;
-        padding: 20px;
-        line-height: 1.6;
-        color: #222;
-    }
+<link rel="stylesheet" href="style.css">
 
-    h1, h2 {
-        font-weight: 700;
-        margin-top: 30px;
-    }
-
-    .header {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .header img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
-
-    .contact a {
-        text-decoration: none;
-        color: #333;
-        margin-right: 15px;
-        font-size: 1rem;
-    }
-
-    .section {
-        margin-top: 40px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    .course-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px 15px;
-    }
-</style>
 </head>
 
 <body>
 
-<!-- Header -->
-<div class="header">
-    <img src="profile.jpg" alt="Profile Photo">
-    <div>
-        <h1>Shambhavi Shanker</h1>
-        <p>Dual Degree (B.Tech + M.Tech), Electrical Engineering<br>
-        Indian Institute of Technology Bombay</p>
+<div class="container">
 
-        <div class="contact">
-            <a href="mailto:shambhavi13shanker@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/shambhavi-shanker"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://scholar.google.com"><i class="fa-brands fa-google"></i></a>
-            <a href="https://shambhavi-portfolio.com"><i class="fa-solid fa-globe"></i></a>
-            <a><i class="fa-solid fa-phone"></i> +91-9798192829</a>
+    <div class="header-card">
+        <img src="profile.jpg" alt="Profile Photo">
+        <div class="header-info">
+            <h1>Shambhavi Shanker</h1>
+            <p>Dual Degree (B.Tech + M.Tech), Electrical Engineering<br>
+            Indian Institute of Technology Bombay</p>
+
+            <div class="contact-bar">
+                <a href="mailto:shambhavi13shanker@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/shambhavi-shanker-791b22223/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=CzjETCoAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa-brands fa-google"></i></a>
+                <a href="https://shambhavii13.github.io/" target="_blank" title="Portfolio"><i class="fa-solid fa-globe"></i></a>
+                <a href="tel:+919798192829" title="Call"><i class="fa-solid fa-phone"></i> +91-9798192829</a>
+            </div>
         </div>
     </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">About Me</button>
+        <div class="panel"> <p>
+            I am a final-year Dual Degree student in Electrical Engineering at IIT Bombay, pursuing a Minor in Machine Learning
+            and Data Science. My work spans federated learning, medical image analysis, multi-modal reasoning, and representation learning.
+            I enjoy combining foundational AI techniques with real-world biomedical and geospatial applications.
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">Publications</button>
+        <div class="panel">
+            <ul class="publication-list">
+                
+                <li id="pub-1">
+                    <div class="pub-title">FedVR: Variance Regularized Hypernetwork for Federated Domain Generalization</div>
+                    <div class="pub-authors">S Gupta, <b>S Shanker</b>, A Sethi</div>
+                    <div class="pub-venue">
+                        <a href="https://sites.google.com/view/flca" target="_blank">AAAI 2026 FLCA (Federated Learning for Critical Applications) Workshop, Singapore</a>
+                    </div>
+                </li>
+
+                <li id="pub-2">
+                    <div class="pub-title">FedNeuro: Multi-Site fMRI Analysis Using Hypernetwork Personalized and Privacy Enhanced Federated Learning</div>
+                    <div class="pub-authors">S Gupta, <b>S Shanker</b>, A Sethi</div>
+                    <div class="pub-venue">
+                        <a href="https://sites.google.com/view/aimedhealth-aaai/home" target="_blank">AIMedHealth, AAAI Bridge Program 2026</a>
+                    </div>
+                </li>
+
+                <li id="pub-3">
+                    <div class="pub-title">Geospatial CoT Reasoning for Enhanced VQA on Satellite Imagery in Climate Use Cases</div>
+                    <div class="pub-authors"><b>S Shanker</b>, M Padmanaban, et al.</div>
+                    <div class="pub-venue">
+                        <a href="https://www.climatechange.ai/events/neurips2025" target="_blank">NeurIPS 2025 Workshop: Tackling Climate Change with Machine Learning, San Diego</a>
+                    </div>
+                </li>
+
+                <li id="pub-4">
+                    <div class="pub-title">Whole Slide Image Domain Adaptation Tailored with Fisher Vector, Self Supervised Learning, and Novel Loss Function</div>
+                    <div class="pub-authors">RK Gupta, <b>S Shanker</b>, S Das, A Sekhar, A Sethi</div>
+                    <div class="pub-venue">
+                        <a href="http://2025.midl.io/" target="_blank">MIDL 2025, Salt Lake City, Utah</a>
+                    </div>
+                </li>
+
+                <li id="pub-5">
+                    <div class="pub-title">Efficient Whole Slide Image Classification through Fisher Vector Representation</div>
+                    <div class="pub-authors">RK Gupta, <b>S Shanker</b>, D Dharani, A Sethi</div>
+                    <div class="pub-venue">
+                        <a href="https://www.bibe2024.kg.ac.rs/" target="_blank">IEEE BIBE 2024, Kragujevac, Serbia</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">Internships & Research Experience</button>
+        <div class="panel">
+            
+            <div class="experience-block">
+                <h3>Federated Domain Generalization – MeDAL Lab, IIT Bombay (Aug ’25 – Ongoing)</h3>
+                <ul class="experience-list">
+                    <li>Designed a federated framework utilizing hypernetwork-based personalization <a href="#pub-1" class="citation-link">[1]</a> and variance regularization to improve privacy and generalization.</li>
+                    <li>Extended the architecture to multi-site fMRI analysis <a href="#pub-2" class="citation-link">[2]</a>, enabling collaborative neuroimaging without raw data sharing.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <h3>AI Research Intern – IBM Research (May ’25 – Aug ’25)</h3>
+                <ul class="experience-list">
+                    <li>Built a Geospatial VQA system <a href="#pub-3" class="citation-link">[3]</a> with Chain-of-Thought reasoning, improving accuracy by 36% via SFT and DPO on multispectral data.</li>
+                    <li>Co-developed a multi-agentic workflow for complex reasoning across text, tables, and satellite imagery.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <h3>Unsupervised Domain Adaptation – MeDAL Lab, IIT Bombay (May ’23 – May ’25)</h3>
+                <ul class="experience-list">
+                    <li>Achieved 79% accuracy (SoTA) in HER2 classification by designing a cross-domain framework <a href="#pub-4" class="citation-link">[4]</a> utilizing Fisher Vectors <a href="#pub-5" class="citation-link">[5]</a> and self-supervised learning.</li>
+                    <li>Implemented a robust WSI preprocessing pipeline for tissue detection and high-attention patch selection to reduce annotation costs.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <h3>Data Science Intern – Amaranth Medical Analytics (May ’24 – Aug ’24)</h3>
+                <ul class="experience-list">
+                    <li>Trained a U-Net for multi-class tissue segmentation to automatically compute biomarker scores (HER2, ER, PR) from cancerous regions.</li>
+                    <li>Integrated the segmentation models into a clinical pathology portal to aid real-time diagnostic decision-making.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">Relevant Courses</button>
+        <div class="panel">
+            <div class="course-grid">
+                <div class="course-tag">Computer Vision</div>
+                <div class="course-tag">Advanced Image Processing</div>
+                <div class="course-tag">Advanced Machine Learning</div>
+
+                <div class="course-tag">Linear Algebra</div>
+                <div class="course-tag">Economics</div>
+                <div class="course-tag">Probability & Random Processes</div>
+
+                <div class="course-tag">Quantum Communication</div>
+                <div class="course-tag">Neuromorphic Engineering</div>
+                <div class="course-tag">Data Science Bootcamp</div>
+
+                <div class="course-tag">Signal Processing</div>
+                <div class="course-tag">Simulation & Modeling</div>
+                <div class="course-tag">Control Systems</div>
+
+                <div class="course-tag">Quantum Physics</div>
+                <div class="course-tag">Calculus</div>
+                <div class="course-tag">Algorithmic Design</div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<!-- Bio -->
-<div class="section">
-<h2>About Me</h2>
-<p>
-I am a final-year Dual Degree student in Electrical Engineering at IIT Bombay, pursuing a Minor in Machine Learning
-and Data Science. My work spans federated learning, medical image analysis, multi-modal reasoning, and representation learning.
-I enjoy combining foundational AI techniques with real-world biomedical and geospatial applications.
-</p>
-</div>
+<script>
+    const acc = document.getElementsByClassName("accordion-header");
+    
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            // Toggle active class on header
+            this.classList.toggle("active");
+            
+            // Toggle panel visibility
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight || panel.classList.contains('open')) {
+                panel.style.maxHeight = null;
+                panel.classList.remove('open');
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.classList.add('open');
+            }
+        });
+    }
 
-<!-- Publications -->
-<div class="section">
-<h2>Publications</h2>
-<ul>
-    <li>S Gupta, <b>S Shanker</b>, A Sethi | <i>FedVR: Variance Regularized Hypernetwork for Federated Domain Generalization</i> | AAAI 2026 FLCA Workshop, Singapore</li>
-    <li>S Gupta, <b>S Shanker</b>, A Sethi | <i>FedNeuro: Multi-Site fMRI Analysis Using Hypernetwork Personalized and Privacy Enhanced Federated Learning</i> | AAAI Bridge Program 2026</li>
-    <li><b>S Shanker</b>, M Padmanaban, et al. | <i>Geospatial CoT Reasoning for Enhanced VQA on Satellite Imagery</i> | NeurIPS 2025 Climate ML Workshop</li>
-    <li>RK Gupta, <b>S Shanker</b>, S Das, A Sekhar, A Sethi | <i>WSI Domain Adaptation via Fisher Vector + SSL + Novel Loss</i> | MIDL 2025</li>
-    <li>RK Gupta, <b>S Shanker</b>, D Dharani, A Sethi | <i>Efficient WSI Classification via Fisher Vectors</i> | IEEE BIBE 2024</li>
-</ul>
-</div>
-
-<!-- Internships & Research -->
-<div class="section">
-<h2>Internships & Research Experience</h2>
-
-<h3>Federated Domain Generalization – MeDAL Lab, IIT Bombay (Aug ’25 – Ongoing)</h3>
-<ul>
-    <li>Developing hypernetwork-based federated learning models improving global performance & per-client robustness.</li>
-    <li>Designed variance-regularized aggregation and structural privacy-aware domain embeddings.</li>
-    <li>Extended to multi-site fMRI analysis enabling collaborative neuroimaging without raw data sharing.</li>
-</ul>
-
-<h3>AI Research Intern – IBM Research (May ’25 – Aug ’25)</h3>
-<ul>
-    <li>Built Geospatial VQA system with Chain-of-Thought reasoning and multispectral fusion; improved accuracy by 36%.</li>
-    <li>Created dataset with CoT annotations; trained using SFT + DPO.</li>
-    <li>Co-developed multi-agentic workflow reasoning across text, tables, and imagery.</li>
-</ul>
-
-<h3>Unsupervised Domain Adaptation – MeDAL Lab, IIT Bombay (May ’23 – May ’25)</h3>
-<ul>
-    <li>Developed WSI domain adaptation pipeline using Fisher Vectors, SSL, MIL, and carefully designed loss functions.</li>
-    <li>Preprocessing included tissue detection, patch ranking, and nuclei counting.</li>
-    <li>Achieved 79% accuracy in HER2 classification across clinical domains.</li>
-</ul>
-
-<h3>Data Science Intern – Amaranth Medical Analytics (May ’24 – Aug ’24)</h3>
-<ul>
-    <li>Annotated WSIs and trained U-Net for multi-class tissue segmentation.</li>
-    <li>Computed biomarker scores (HER2, ER, PR) using cancerous-region filtering.</li>
-    <li>Integrated segmentation layers into clinical pathology portal.</li>
-</ul>
-</div>
-
-<!-- Courses -->
-<div class="section">
-<h2>Relevant Courses</h2>
-
-<div class="course-grid">
-    <div>Computer Vision</div>
-    <div>Advanced Image Processing</div>
-    <div>Advanced Machine Learning</div>
-
-    <div>Linear Algebra</div>
-    <div>Economics</div>
-    <div>Probability & Random Processes</div>
-
-    <div>Quantum Communication</div>
-    <div>Neuromorphic Engineering</div>
-    <div>Data Science Bootcamp (WiDS IITB)</div>
-
-    <div>Signal Processing</div>
-    <div>Simulation & Modeling</div>
-    <div>Control Systems</div>
-
-    <div>Quantum Physics</div>
-    <div>Calculus</div>
-    <div>Algorithmic Design of Digital Systems</div>
-</div>
-
-</div>
+    // Optional: Open the "Publications" tab automatically if a user clicks a citation link
+    const citationLinks = document.querySelectorAll('.citation-link');
+    citationLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Index 1 is the Publications accordion (0 is Bio, 1 is Pubs)
+            const pubHeader = acc[1]; 
+            const pubPanel = pubHeader.nextElementSibling;
+            
+            if (!pubHeader.classList.contains('active')) {
+                pubHeader.classList.add('active');
+                pubPanel.style.maxHeight = pubPanel.scrollHeight + "px";
+                pubPanel.classList.add('open');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
